@@ -50,7 +50,7 @@ export function RecentProjects() {
             </div>
           ))}
         </div>
-        <button className="btn max-w-xs bg-primary h-16 rounded-full">
+        <button className="btn font-medium text-xl max-w-xs bg-primary h-16 rounded-full">
           Explore all projects
         </button>
       </div>
