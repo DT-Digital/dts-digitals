@@ -22,7 +22,9 @@ export function OurTeam() {
   return (
     <section className="w-full bg-[url(/get-bg.svg)] py-40 px-4 mt-10">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="mb-10">Meet Our Team</h2>
+        <h2 data-aos="zoom-in-up" className="mb-10">
+          Meet Our Team
+        </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {team.map((i, idx) => (
