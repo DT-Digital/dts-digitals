@@ -6,7 +6,6 @@ import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import clsx from "clsx";
 import { Logo } from "../Logo";
-import { useSelector } from "react-redux";
 import { useAppSelector } from "@/redux/store";
 
 export function Navbar() {
@@ -52,7 +51,7 @@ export function Navbar() {
       <div className="flex z-10 py-10 justify-between items-center mx-auto w-full max-w-screen-2xl h-full">
         <div className="flex gap-x-10 items-center">
           <Logo />
-          <Link href="#about" className="max-lg:hidden btn-ghost btn">
+          <Link href="about" className="max-lg:hidden btn-ghost btn">
             About
           </Link>
           <Link href="#services" className="max-lg:hidden btn-ghost btn">
@@ -87,7 +86,7 @@ export function Navbar() {
         <div className="flex flex-col items-start justify-start mt-10 relative gap-7 cursor-pointer lg:hidden">
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            href="#about"
+            href="about"
             className="lg:hidden btn-ghost btn"
           >
             About

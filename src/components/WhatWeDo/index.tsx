@@ -21,7 +21,7 @@ const data = [
   },
   {
     id: 4,
-    title: "4. Web3 Development",
+    title: "4. Web3 & BlockChain Development",
     desc: "We provide you the best and most innovative software and mobile app development services. Join us to build well-designed and fast- performing software today! Let’s Work Together",
     image: "/images/software-design.jpg",
   },
@@ -48,13 +48,14 @@ export function WhatWeDo() {
             priority
           />
         </div>
-        <div className="mt-10">
+        <div className="mt-10 ">
           {data.map((item) => (
-            <div
-              key={item.id}
-              tabIndex={0}
-              className="sm:px-5 bg-opacity-40 backdrop-blur-lg collapse collapse-arrow my-4"
-            >
+            <div key={item.id} className="collapse collapse-arrow">
+              <input
+                type="radio"
+                name="my-accordion-1"
+                className="border border-black"
+              />
               <h4 className="collapse-title font-medium">{item.title}</h4>
               <div className="collapse-content">
                 <div className="grid sm:grid-cols-2">

@@ -53,7 +53,7 @@ export function Footer() {
             Customer Service
           </Link>
           <a className="link link-hover  mt-2" href="mailto:eazipay@gmail.com">
-            eazipay@gmail.com
+            hello@dts-digitals.com
           </a>
 
           <input

@@ -50,7 +50,9 @@ export function RecentProjects() {
             </div>
           ))}
         </div>
-        <button className="btn bg-gray-700">Explore all projects</button>
+        <button className="btn max-w-xs bg-primary h-16 rounded-full">
+          Explore all projects
+        </button>
       </div>
     </section>
   );
