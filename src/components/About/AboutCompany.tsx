@@ -13,11 +13,11 @@ export function AboutCompany() {
         />
       </div>
       <div className="max-w-screen-lg mx-auto px-6">
-        <h3 className="my-10">
+        <h3 data-aos="zoom-in-up" className="my-10">
           We Are a <span className="text-primary">Leading Tech Company</span> In
           Creating Powerful Softwares & Technologies.
         </h3>
-        <p className="my-7">
+        <p data-aos="zoom-in-up" className="my-7">
           Starting from basic IT solutions to high-tech softwares, mobile app
           development, blockchain development, and web development, or detailed
           designs and consultancy - we offer you the best digital services to
