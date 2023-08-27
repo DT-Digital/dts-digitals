@@ -42,11 +42,14 @@ export function Navbar() {
 
   return (
     <nav
-      className={clsx(`fixed top-0 w-full h-20 z-30 px-5 items-center`, {
-        ["block"]: showNavbar,
-        "lg:hidden": !showNavbar,
-        "backdrop-blur-lg": !isOpen,
-      })}
+      className={clsx(
+        `fixed top-0 w-full h-20 z-30 px-5 items-center bg-white bg-opacity-20`,
+        {
+          ["block"]: showNavbar,
+          "lg:hidden": !showNavbar,
+          "backdrop-blur-lg": !isOpen,
+        }
+      )}
     >
       <div className="flex z-10 py-10 justify-between items-center mx-auto w-full max-w-screen-2xl h-full">
         <div className="flex gap-x-10 items-center">
@@ -64,7 +67,7 @@ export function Navbar() {
         <div className="flex gap-x-7 items-center">
           <Link
             href="#contact"
-            className="rounded-full btn px-12 btn-outline text-primary border-primary max-lg:hidden"
+            className="rounded-full btn px-12 btn-outline text-black border-black max-lg:hidden"
           >
             Contact
           </Link>
