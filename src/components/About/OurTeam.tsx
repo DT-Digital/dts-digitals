@@ -27,7 +27,7 @@ export function OurTeam() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {team.map((i, idx) => (
             <div key={idx}>
-              <div className="avatar online">
+              <div className="avatar">
                 <div className="relative w-40 sm:w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <Image src={i.image} layout="fill" alt="team-member" />
                 </div>
