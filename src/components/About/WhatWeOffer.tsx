@@ -34,7 +34,7 @@ export function WhatWeOffer() {
         <div className="grid sm:grid-cols-2 gap-10 sm:gap-20 mt-10">
           {data.map((i, index) => (
             <div data-aos="zoom-in-up" key={index} className="text-gray-400">
-              <h4 className="text-white font-medium mb-7">{i.title}</h4>
+              <h4 className="text-black font-medium mb-7">{i.title}</h4>
               <p className="text-lg sm:text-xl">{i.desc}</p>
             </div>
           ))}
