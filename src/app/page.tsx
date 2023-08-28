@@ -1,17 +1,9 @@
-import { Testimonial } from "@/components/Testimonials";
-import { WhatWeDo } from "@/components/WhatWeDo";
-import { Hero } from "@/components/Hero";
-import { Contact } from "@/components/Contact";
-import { RecentProjects } from "@/components/LatestProjects";
+import Home from "@/components/Home";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <Hero />
-      <WhatWeDo />
-      <RecentProjects />
-      <Testimonial />
-      <Contact />
+      <Home />
     </main>
   );
 }

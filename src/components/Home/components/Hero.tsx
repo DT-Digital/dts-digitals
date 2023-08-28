@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export const Hero = () => {
+export function Hero() {
   return (
     <section className="min-h-screen pt-40 lg:pt-0 gap-6 lg:px-4 content-center mx-auto max-w-screen-xl md:px-8 grid 2xl:px-0">
       <Image
@@ -27,10 +28,13 @@ export const Hero = () => {
           <span className="text-primary">Digital Products</span> & ventures for
           all businesses.
         </p>
-        <button className="btn my-7 h-20 px-10 text-xl hover:bg-primary rounded-full text-white">
-          Explore our works
-        </button>
+        <Link
+          href={"/#more"}
+          className="btn my-7 h-20 px-10 text-xl hover:bg-primary rounded-full text-white"
+        >
+          Explore
+        </Link>
       </div>
     </section>
   );
-};
+}

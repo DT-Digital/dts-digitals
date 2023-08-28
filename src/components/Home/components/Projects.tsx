@@ -15,12 +15,9 @@ const data = [
   },
 ];
 
-export function RecentProjects() {
+export function Projects() {
   return (
-    <section
-      id="projects"
-      className="w-full bg-[url(/get-bg.svg)] bg-base-80 py-40 px-4 mt-20"
-    >
+    <section id="projects" className="w-full my-10 bg-base-80 py-40 px-4 mt-20">
       <div className="grid max-w-screen-lg items-start mx-auto">
         <h2 data-aos="zoom-in-up" className="text-start text-white">
           Latest Projects
@@ -50,7 +47,7 @@ export function RecentProjects() {
             </div>
           ))}
         </div>
-        <button className="btn font-medium text-xl max-w-sm bg-primary h-16 mt-7 rounded-full">
+        <button className="btn font-medium text-xl max-w-sm text-black hover:bg-gray-300 bg-white h-16 mt-7 rounded-full">
           Explore all projects
         </button>
       </div>

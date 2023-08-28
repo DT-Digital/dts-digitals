@@ -5,16 +5,11 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import clsx from "clsx";
-import { Logo } from "../Logo";
-import { useAppSelector } from "@/redux/store";
+import { Logo } from "./Logo";
 
 export function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  const username = useAppSelector((state) => state.authReducer.value.username);
-  const isModerator = useAppSelector(
-    (state) => state.authReducer.value.isModerator
-  );
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -57,16 +52,16 @@ export function Navbar() {
           <Link href="about" className="max-lg:hidden btn-ghost btn">
             About
           </Link>
-          <Link href="#services" className="max-lg:hidden btn-ghost btn">
+          <Link href="/services" className="max-lg:hidden btn-ghost btn">
             Services
           </Link>
-          <Link href="#projects" className="max-lg:hidden btn-ghost btn">
+          <Link href="/#projects" className="max-lg:hidden btn-ghost btn">
             Projects
           </Link>
         </div>
         <div className="flex gap-x-7 items-center">
           <Link
-            href="#contact"
+            href="/#contact"
             className="rounded-full btn px-12 btn-outline text-black border-black max-lg:hidden"
           >
             Contact
@@ -96,7 +91,7 @@ export function Navbar() {
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            href="#services"
+            href="/services"
             className="lg:hidden btn-ghost btn"
           >
             Services

@@ -3,7 +3,7 @@ import { AboutCompany } from "./AboutCompany";
 import { WhatWeOffer } from "./WhatWeOffer";
 import { OurTeam } from "./OurTeam";
 
-export function About() {
+export default function About() {
   return (
     <section>
       <AboutCompany />
