@@ -19,9 +19,9 @@ export function ServiceHero() {
         >
           <span className="text-zinc-900 text-3xl mb-4">Services</span>{" "}
           <h2 className="font-bold lg:mt-10">
-            Get the best, cost-effective
-            <span className="text-primary"> digital services</span>
-            for your software.
+            Get the best, cost-effective{" "}
+            <span className="text-primary"> digital services</span> for your
+            software.
           </h2>
           <p className="mt-8 w-4/5 text-xl">
             We developing enterprise{" "}
