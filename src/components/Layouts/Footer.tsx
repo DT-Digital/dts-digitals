@@ -13,18 +13,18 @@ const Icons = [
 export function Footer() {
   return (
     <footer className="bg-white border-t border-gray-300">
-      <footer className="footer max-w-screen-2xl mx-auto p-10">
+      <footer className="p-10 mx-auto max-w-screen-2xl footer">
         <div>
           <span>
             <Logo className="bg-black" />
           </span>
-          <p className="mt-4 text-xs w-40">
+          <p className="mt-4 w-40 text-xs">
             Leading software company to turn your ideas into technological
             wonders
           </p>
           <Link
             href="#"
-            className="mt-4 link link-hover text-xs w-40 leading-loose"
+            className="mt-4 w-40 text-xs leading-loose link link-hover"
           >
             Copyright © 2023 Eazipay. All rights reserved
           </Link>
@@ -38,28 +38,28 @@ export function Footer() {
         </div>
 
         <div>
-          <span className="font-bold text-lg text-black">Legal</span>
-          <Link href="#" className="link link-hover  mt-2">
+          <span className="text-lg font-bold text-black">Legal</span>
+          <Link href="#" className="mt-2 link link-hover">
             Privacy Policy
           </Link>
-          <Link href="#" className="link link-hover  mt-2">
+          <Link href="#" className="mt-2 link link-hover">
             Terms of Service
           </Link>
         </div>
 
         <div>
-          <span className="font-bold text-lg text-black">Contact Us</span>
-          <Link href="#" className="link link-hover  mt-2">
+          <span className="text-lg font-bold text-black">Contact Us</span>
+          <Link href="#" className="mt-2 link link-hover">
             Customer Service
           </Link>
-          <a className="link link-hover  mt-2" href="mailto:eazipay@gmail.com">
-            hello@dts-digitals.com
+          <a className="mt-2 link link-hover" href="mailto:hello@dtdigital.com">
+            hello@dtdigital.com
           </a>
 
           <input
             type="text"
             placeholder="Your email address"
-            className="w-full bg-gray-100 p-4 h-10 rounded-full mt-2"
+            className="p-4 mt-2 w-full h-10 bg-gray-100 rounded-full"
           />
         </div>
       </footer>
