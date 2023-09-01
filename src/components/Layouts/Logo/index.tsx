@@ -9,14 +9,13 @@ interface LogoProps {
 export const Logo: FC<LogoProps> = ({ className }) => {
   return (
     <Link href="/" className={clsx(`text-2xl`, className)}>
-      {/* <Image
+      <Image
         width={138}
         alt="Flashpay logo"
         className="h-full"
         height={100}
         src="/logo.svg"
-      /> */}
-      <p className="font-bold">Logo</p>
+      />
     </Link>
   );
 };
