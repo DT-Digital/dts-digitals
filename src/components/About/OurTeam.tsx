@@ -4,7 +4,7 @@ const team = [
   {
     name: "Divine Hycenth",
     title: "Co-Founder. Full-Stack & Senior BlockChain Engineer",
-    image: "/team/divine.jpg",
+    image: "/team/divine.png",
   },
   {
     name: "Tareq Abdalla",
