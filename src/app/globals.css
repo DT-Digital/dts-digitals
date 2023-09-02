@@ -7,9 +7,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   color: #333333;
   background: #ffffff;
+  scroll-behavior: smooth;
 }
 
 h1,

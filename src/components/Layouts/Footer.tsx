@@ -26,7 +26,8 @@ export function Footer() {
             href="#"
             className="mt-4 w-40 text-xs leading-loose link link-hover"
           >
-            Copyright © 2023 Eazipay. All rights reserved
+            Copyright © {new Date().getFullYear()} DTdigital. All rights
+            reserved
           </Link>
           <div className="flex gap-3 mt-4">
             {Icons.map((i, idx) => (
@@ -52,8 +53,8 @@ export function Footer() {
           <Link href="#" className="mt-2 link link-hover">
             Customer Service
           </Link>
-          <a className="mt-2 link link-hover" href="mailto:hello@dtdigital.com">
-            hello@dtdigital.com
+          <a className="mt-2 link link-hover" href="mailto:hello@dtdigital.nl">
+            hello@dtdigital.nl
           </a>
 
           <input

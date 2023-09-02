@@ -17,7 +17,7 @@ const team = [
     image: "/team/success.jpg",
   },
   {
-    name: "Reina Peters",
+    name: "Sandra De Jong",
     title: "CMO",
     image: "/team/not-available.jpg",
   },
