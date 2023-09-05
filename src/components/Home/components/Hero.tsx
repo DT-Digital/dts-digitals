@@ -24,7 +24,7 @@ export function Hero() {
           Excellence
         </h1>
         <p className="mt-8 w-4/5 text-xl">
-          We developing enterprise{" "}
+          We develope enterprise{" "}
           <span className="text-primary">Digital Products</span> & ventures for
           all businesses.
         </p>
