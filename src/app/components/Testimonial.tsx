@@ -14,7 +14,9 @@ export function Testimonial() {
         We are happy to showcase reviews from our happy clients around the
         world.
         <br />
-        <button className="mx-auto mt-4 btn">Get in touch</button>
+        <a href="/#contact" className="mx-auto mt-4 btn">
+          Get in touch
+        </a>
       </p>
     </section>
   );
