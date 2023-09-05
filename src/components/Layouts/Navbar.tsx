@@ -43,10 +43,10 @@ export function Navbar() {
           ["block"]: showNavbar,
           "lg:hidden": !showNavbar,
           "backdrop-blur-lg": !isOpen,
-        }
+        },
       )}
     >
-      <div className="flex z-10 py-10 justify-between items-center mx-auto w-full max-w-screen-2xl h-full">
+      <div className="flex z-10 justify-between items-center py-10 mx-auto w-full max-w-screen-2xl h-full">
         <div className="flex gap-x-10 items-center">
           <Logo />
           <Link href="about" className="max-lg:hidden btn-ghost btn">
@@ -62,7 +62,7 @@ export function Navbar() {
         <div className="flex gap-x-7 items-center">
           <Link
             href="/#contact"
-            className="rounded-full btn px-12 btn-outline text-black border-black max-lg:hidden"
+            className="px-12 text-black rounded-full border-black btn btn-outline max-lg:hidden"
           >
             Contact
           </Link>
@@ -70,6 +70,8 @@ export function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="cursor-pointer lg:hidden"
+            id="nav-button"
+            aria-label="nav-button"
           >
             {isOpen ? <IoClose size={40} /> : <AiOutlineMenu size={30} />}
           </button>
@@ -77,11 +79,10 @@ export function Navbar() {
       </div>
 
       <div
-        className={`bg-white fixed menu overflow-auto -z-[1] right-0 left-0 top-0 bottom-0 opacity-0 transition-opacity duration-300 pt-20 px-5 ${
-          isOpen ? "block opacity-100" : "hidden"
-        } lg:hidden`}
+        className={`bg-white fixed menu overflow-auto -z-[1] right-0 left-0 top-0 bottom-0 opacity-0 transition-opacity duration-300 pt-20 px-5 ${isOpen ? "block opacity-100" : "hidden"
+          } lg:hidden`}
       >
-        <div className="flex flex-col items-start justify-start mt-10 relative gap-7 cursor-pointer lg:hidden">
+        <div className="flex relative flex-col gap-7 justify-start items-start mt-10 cursor-pointer lg:hidden">
           <Link
             onClick={() => setIsOpen(!isOpen)}
             href="about"

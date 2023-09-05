@@ -4,17 +4,20 @@ import React from "react";
 export function AboutCompany() {
   return (
     <>
-      <div className="h-96 w-full relative">
+      <div className="relative w-full h-96">
         <Image
           src="/about.jpg"
           layout="fill"
           alt="about"
-          className="object-cover"
+          className="object-cover blur"
         />
       </div>
-      <div className="max-w-screen-lg mx-auto px-6">
+      <div className="px-6 mx-auto max-w-screen-lg">
         <h3 data-aos="zoom-in-up" className="my-10">
-          We Are a <span className="text-primary">Leading Tech Company</span> In
+          <strong>
+            Doing Things <em>digital</em>
+          </strong>{" "}
+          is a <span className="text-primary">Leading Tech Company</span> In
           Creating Powerful Softwares & Technologies.
         </h3>
         <p data-aos="zoom-in-up" className="my-7">
