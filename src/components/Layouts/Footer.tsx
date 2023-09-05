@@ -1,14 +1,5 @@
 import React from "react";
-import { Logo } from "./Logo";
 import Link from "next/link";
-import Image from "next/image";
-
-const Icons = [
-  { icon: "/instagram.svg" },
-  { icon: "/twitter.svg" },
-  { icon: "/linkedin.svg" },
-  { icon: "/facebook.svg" },
-];
 
 export function Footer() {
   return (
