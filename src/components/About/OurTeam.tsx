@@ -18,13 +18,13 @@ const team = [
   },
   {
     name: "Sandra De Jong",
-    title: "CMO",
-    image: "/team/not-available.jpg",
+    title: "Sales & Marketting",
+    image: "/team/sandra.jpeg",
   },
   {
     name: "Katerista Dmitry",
     title: "UI/UX Designer",
-    image: "/team/not-available.jpg",
+    image: "/team/kate.jpeg",
   },
 ];
 

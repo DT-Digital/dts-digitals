@@ -43,7 +43,7 @@ export function Navbar() {
           ["block"]: showNavbar,
           "lg:hidden": !showNavbar,
           "backdrop-blur-lg": !isOpen,
-        },
+        }
       )}
     >
       <div className="flex z-10 justify-between items-center py-10 mx-auto w-full max-w-screen-2xl h-full">
@@ -61,7 +61,7 @@ export function Navbar() {
         </div>
         <div className="flex gap-x-7 items-center">
           <Link
-            href="/#contact"
+            href="/contact"
             className="px-12 text-black rounded-full border-black btn btn-outline max-lg:hidden"
           >
             Contact
@@ -106,7 +106,7 @@ export function Navbar() {
           </Link>
           <Link
             onClick={() => setIsOpen(!isOpen)}
-            href="#contact"
+            href="/contact"
             className="lg:hidden btn-ghost btn"
           >
             Contact

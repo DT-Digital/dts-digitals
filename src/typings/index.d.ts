@@ -1,1 +1,1 @@
-declare module "@getbrevo/brevo";
+declare module "@calcom/embed-react";

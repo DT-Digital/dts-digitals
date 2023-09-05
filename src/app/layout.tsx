@@ -4,16 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 
-import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import { ReduxProvider } from "@/redux/provider";
+import "react-toastify/dist/ReactToastify.min.css";
+import { ToastContainer } from "react-toastify";
+import { Metadata } from "next";
+import { LoadCalendar } from "@/components/Calendar";
 
 const inter = Open_Sans({ subsets: ["greek-ext"] });
 
 export const metadata: Metadata = {
-  title: "DTS- Digitals",
-  description:
-    "Leading software company to turn your ideas into technological wonders",
+  title: "DT Digital",
+  description: "Creating Softwares & Digital Excellence",
 };
 
 export default function RootLayout({
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ReduxProvider>
-          <MainLayout>{children}</MainLayout>
-        </ReduxProvider>
+        <MainLayout>
+          {children}
+          <LoadCalendar />
+          <ToastContainer />
+        </MainLayout>
       </body>
     </html>
   );
