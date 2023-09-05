@@ -9,7 +9,7 @@ export async function sendEmail(formInput: any) {
         headers: {
           "api-key":
             process.env.BREVO_EMAIL_API_KEY ||
-            "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",
+            "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",
         },
       },
     });
