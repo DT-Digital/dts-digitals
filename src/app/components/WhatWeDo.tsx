@@ -3,27 +3,23 @@ import Link from "next/link";
 const data = [
   {
     title: "DISCOVERY",
-    image: "/discovery.svg",
     desc: "Our team will create the estimation for your project. Then the Business Analysts will deeply analyze your requirements to uncover the best-fitting strategy. DT-team is your go-to partner, so we'll go into every market detail to crush-test your idea.",
   },
   {
     title: "PREPARATION",
-    image: "/preparation.svg",
     desc: "Our legal profs will handle the paperwork, while we’ll be creating a custom team from selected developers. As we approve the business logic and user flow, our designers will cover your idea in visuals.",
   },
   {
     title: "DEVELOPMENT",
-    image: "/development.svg",
     desc: "Our team is all about customization. The next step is fitting our development and project management skills to your specific needs. After everything is developed, tested, and reviewed by our Tech Heads, we celebrate the successful launch.",
   },
   {
     title: "SUPPORT",
-    image: "/support.svg",
     desc: "DT-team's not just another development company but a partner for the long haul. Get you back covered with 6 months of free support and maintenance.",
   },
 ];
 
-export function WhatWeDo() {
+export function OurProcess() {
   return (
     <section
       id="more"
