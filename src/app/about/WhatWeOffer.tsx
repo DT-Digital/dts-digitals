@@ -27,14 +27,14 @@ export function WhatWeOffer() {
       id="projects"
       className="w-full bg-[url(/get-bg.svg)] bg-base-80 py-40 px-4 mt-20"
     >
-      <div className="grid max-w-screen-xl items-start mx-auto">
+      <div className="grid items-start mx-auto max-w-screen-xl">
         <h2 data-aos="zoom-in-up" className="text-start text-primary">
           What We Offer
         </h2>
-        <div className="grid sm:grid-cols-2 gap-10 sm:gap-20 mt-10">
+        <div className="grid gap-10 mt-10 sm:grid-cols-2 sm:gap-20">
           {data.map((i, index) => (
             <div data-aos="zoom-in-up" key={index} className="text-gray-500">
-              <h4 className="text-black font-medium mb-7">{i.title}</h4>
+              <h4 className="mb-7 font-medium text-white">{i.title}</h4>
               <p className="text-lg sm:text-xl">{i.desc}</p>
             </div>
           ))}
