@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const data = [
@@ -24,25 +23,25 @@ const data = [
   },
 ];
 
-export function OurProcess() {
+export function WhatWeDo() {
   return (
     <section
       id="more"
       className="w-full bg-[url(/get-bg.svg)] py-40 px-4 mt-10"
     >
-      <div className="max-w-screen-xl mx-auto grid">
+      <div className="grid mx-auto max-w-screen-xl">
         <h2 data-aos="zoom-in-up" className="my-10">
           Our Process
         </h2>
-        <div className="grid lg:grid-cols-2 justify-center my-20 gap-10 items-center">
+        <div className="grid gap-10 justify-center items-center my-20 lg:grid-cols-2">
           {data.map((item, id) => (
             <div
               data-aos="zoom-in-up"
               key={id}
-              className="self-center flex-1 z-10 card w-fit min-h-72 h-full md:h-64 bg-opacity-40 backdrop-blur-lg bg-white p-6"
+              className="z-10 flex-1 self-center p-6 h-full bg-white bg-opacity-40 md:h-64 card w-fit min-h-72 backdrop-blur-lg"
             >
-              <h4 className="lg:mt-0 font-light">{item.title}</h4>
-              <p className="my-4 text-gray-500 text-lg md:text-xl">
+              <h4 className="font-light lg:mt-0">{item.title}</h4>
+              <p className="my-4 text-lg text-gray-500 md:text-xl">
                 {item.desc}
               </p>
             </div>
@@ -50,7 +49,7 @@ export function OurProcess() {
         </div>
         <Link
           href={"/#projects"}
-          className="btn max-w-xs bg-black my-7 h-20 px-10 text-xl hover:bg-primary rounded-full text-white"
+          className="px-10 my-7 max-w-xs h-20 text-xl text-white bg-black rounded-full btn hover:bg-primary"
         >
           See Projects
         </Link>
