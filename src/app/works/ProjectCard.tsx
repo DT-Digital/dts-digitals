@@ -18,20 +18,22 @@ export const ProjectCard = ({
 }) => {
   return (
     <>
-      <div className="my-14" data-aos="zoom-in-up">
+      <div className="my-14">
         <div className="grid sm:grid-cols-2">
-          <div className="relative h-96 md:h-[500px] p-4">
+          <div className="relative p-4 h-96 md:h-[500px]">
             <Image
               src={imageUrl}
               alt="image"
-              layout="fill"
+              width="500"
+              height="500"
               loading="lazy"
-              className="object-cover"
+              className="object-right-top"
+              data-aos="zoom-in-up"
             />
           </div>
-          <div className="sm:ml-10 mt-10 text-gray-500 sm:mt-0 flex gap-y-10 flex-col items-end max-w-md justify-center">
+          <div className="flex flex-col gap-y-10 justify-center items-end mt-10 max-w-md text-gray-500 sm:mt-0 sm:ml-10">
             {tags && (
-              <div className="flex gap-x-2 my-2 self-start">
+              <div className="flex gap-x-2 self-start my-2">
                 {tags.map((tag, i) => (
                   <div className="badge badge-accent" key={tag + i}>
                     {tag}
@@ -39,52 +41,28 @@ export const ProjectCard = ({
                 ))}
               </div>
             )}
-            <h4 className="font-medium self-start">{title}</h4>
-            <p className="text-lg">{description}</p>
+            <h4
+              className="self-start font-medium"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              {title}
+            </h4>
+            <p className="text-lg" data-aos="fade-left" data-aos-delay="200">
+              {description}
+            </p>
 
             <Link
               href={websiteUrl}
-              className="mt-4 border-gray-500 text-gray-500 rounded-full h-16 px-6 btn-outline btn text-lg"
+              className="px-6 mt-4 h-16 text-lg text-gray-500 rounded-full border-gray-500 btn-outline btn"
+              data-aos="fade-left"
+              data-aos-delay="300"
             >
               Explore Project
             </Link>
           </div>
         </div>
       </div>
-      {/* <div
-        data-aos="zoom-in-up"
-        className="card card-compact max-w-sm bg-base-100 shadow-xl"
-      >
-        <figure>
-          <Image
-            src={imageUrl}
-            alt={title}
-            height={700}
-            width={500}
-            className="w-full h-full object-cover object-left"
-          />
-        </figure>
-        <div className="card-body bg-zinc-100 rounded-b-xl">
-          {tags && (
-            <div className="flex gap-x-2 my-2">
-              {tags.map((tag, i) => (
-                <div className="badge badge-info" key={tag + i}>
-                  {tag}
-                </div>
-              ))}
-            </div>
-          )}
-          <h2 className="card-title text-black">{title}</h2>
-          <p className="text-gray-500">{description}</p>
-          <div className="card-actions justify-end">
-            <button className="btn bg-zinc-200 hover:bg-primary hover:text-white">
-              <Link className="" href={websiteUrl}>
-                View Project
-              </Link>
-            </button>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

@@ -3,19 +3,14 @@ import Slider from "react-slick";
 
 const data = [
 	{
-		title: "Jan de Vries",
+		title: "Dominika Onyks",
 		id: 1,
-		desc: "DT Digital has revolutionized our payroll management. Their platform has made our payroll process incredibly efficient. No more manual records or Excel spreadsheets. It's a game-changer!",
+		desc: "DT Digital's remarkable expertise shone during our blockchain collaborations, with unwavering professionalism, reliability, and superb communication. Their profound blockchain knowledge and versatility are truly commendable, and I eagerly await future partnerships.",
 	},
 	{
-		title: "Lotte Jansen",
+		title: "Joas Souza",
 		id: 2,
-		desc: "I can't say enough about DT Digital. Their payroll management solution is top-notch. It's user-friendly, and their support team is exceptional. I highly recommend them!",
-	},
-	{
-		title: "Pieter de Boer",
-		id: 3,
-		desc: "DT Digital has simplified our payroll history management. Having all our data in one place has saved us time and headaches. Downloading payroll history is a breeze. Thank you, DT Digital!",
+		desc: "DT Digital's front-end developers demonstrates a strong commitment to improving UX. They actively engage with our UX team to enhance code and usability, fostering a positive work atmosphere.",
 	},
 ];
 
@@ -32,7 +27,7 @@ export function InfoCard() {
 			data-aos="zoom-in-up"
 			className="content-center mx-auto max-w-screen-xl md:px-5"
 		>
-			<div className="max-w-2xl mx-auto p-3 my-7">
+			<div className="p-3 my-7 mx-auto max-w-2xl">
 				<Slider
 					{...settings}
 					autoplay
@@ -45,10 +40,10 @@ export function InfoCard() {
 					{data.map((item) => (
 						<div
 							key={item.id}
-							className="w-[512px] h-[320px] card bg-primary p-10 lg:p-20 text-white"
+							className="py-8 px-10 text-white lg:px-20 w-[512px] h-[320px] card bg-primary"
 						>
 							<h4>{item.title}</h4>
-							<p className="lg:text-lg leading-loose mt-5">{item.desc}</p>
+							<p className="mt-5 leading-loose lg:text-lg">{item.desc}</p>
 						</div>
 					))}
 				</Slider>
