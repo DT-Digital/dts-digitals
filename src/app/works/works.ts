@@ -11,9 +11,9 @@ export const worksData = [
 	{
 		title: "Cheese",
 		description:
-		"/CHēz/\nNoun, informal: money\n“Cheese” isn’t just a delicious dairy product or a way to describe your dad’s affinity for poorly-made puns. “Cheese” is also a slang term for money – something we all love, even if we’re lactose intolerant. Our goal is to turn your everyday payments into building your credit in the smartest and easiest way so both you and your credit score will be cheesin’ big time. Say cheese! 😁",
+			"/CHēz/\nNoun, informal: money\n“Cheese” isn’t just a delicious dairy product or a way to describe your dad’s affinity for poorly-made puns. “Cheese” is also a slang term for money – something we all love, even if we’re lactose intolerant. Our goal is to turn your everyday payments into building your credit in the smartest and easiest way so both you and your credit score will be cheesin’ big time. Say cheese! 😁",
 		imageUrl: "/image-cheese.png",
-		githubUrl: "https://github.com/nature-ui/nature-ui",
+		githubUrl: "#",
 		websiteUrl: "https://www.earncheese.com/",
 		tags: ["#fintech", "#react", "#typescript"],
 	},
@@ -31,7 +31,7 @@ export const worksData = [
 		description:
 			"Earlybean empowers kids and teens with the skills and knowledge they need to become money smart, through active money management and financial education. We are live in beta.",
 		imageUrl: "/image-earlybean.png",
-		githubUrl: "https://github.com/nature-ui/nature-ui",
+		githubUrl: "#",
 		websiteUrl: "https://earlybean.co/",
 		tags: ["#open-source", "#react", "#typescript"],
 	},
