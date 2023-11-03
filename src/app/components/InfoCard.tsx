@@ -3,21 +3,17 @@ import Slider from "react-slick";
 
 const data = [
   {
-    title: "Joan bush",
+    title: "Dominika Onyks",
     id: 1,
-    desc: "Your staff payroll history is kept in one place forever. No more excel sheet or manual records. Download your payroll history anytime you need it.",
+    desc: "DT Digital's remarkable expertise shone during our blockchain collaborations, with unwavering professionalism, reliability, and superb communication. Their profound blockchain knowledge and versatility are truly commendable, and I eagerly await future partnerships.",
   },
   {
-    title: "Gray Williams",
+    title: "Joas Souza",
     id: 2,
-    desc: "Your staff payroll history is kept in one place forever. No more excel sheet or manual records. Download your payroll history anytime you need it.",
-  },
-  {
-    title: "Sir Humreed",
-    id: 3,
-    desc: "Your staff payroll history is kept in one place forever. No more excel sheet or manual records. Download your payroll history anytime you need it.",
+    desc: "DT Digital's front-end developers demonstrates a strong commitment to improving UX. They actively engage with our UX team to enhance code and usability, fostering a positive work atmosphere.",
   },
 ];
+
 export function InfoCard() {
   const settings = {
     dots: true,
@@ -31,7 +27,7 @@ export function InfoCard() {
       data-aos="zoom-in-up"
       className="content-center mx-auto max-w-screen-xl md:px-5"
     >
-      <div className="max-w-2xl mx-auto p-3 my-7">
+      <div className="p-3 my-7 mx-auto max-w-2xl">
         <Slider
           {...settings}
           autoplay
@@ -44,10 +40,10 @@ export function InfoCard() {
           {data.map((item) => (
             <div
               key={item.id}
-              className="w-[512px] h-[320px] card bg-primary p-10 lg:p-20 text-white"
+              className="py-8 px-10 text-white lg:px-20 w-[512px] h-[320px] card bg-primary"
             >
               <h4>{item.title}</h4>
-              <p className="lg:text-lg leading-loose mt-5">{item.desc}</p>
+              <p className="mt-5 leading-loose lg:text-lg">{item.desc}</p>
             </div>
           ))}
         </Slider>

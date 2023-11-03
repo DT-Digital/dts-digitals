@@ -4,12 +4,12 @@ import { worksData } from "./works";
 
 const Works = () => {
   return (
-    <main className="max-w-screen-xl mx-auto px-6">
+    <main className="px-6 mx-auto max-w-screen-xl">
       <div className="relative z-10">
-        <h3 className="grid my-40">Explore our projects</h3>
+        <h3 className="grid pt-40 pb-20">Explore our projects</h3>
 
         <div className="mb-20">
-          <div className="items-center gap-10 mb-20">
+          <div className="gap-10 items-center mb-20">
             {worksData.map((work, idx) => (
               <ProjectCard
                 description={work.description}
